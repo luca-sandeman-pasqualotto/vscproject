@@ -1,0 +1,70 @@
+#cards{
+    display: grid;
+    grid-template-columns: 2fr;
+    gap: 1.44rem;
+    padding: 1.44rem 0.833rem;
+}
+#cards figure{
+    position: relative;
+}
+
+#cards a{
+    border: solid 1px white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+#cards img {
+    width: 100%;
+    aspect-ratio: 16/6;
+    object-fit: cover;
+    object-position: center center;
+    position: absolute;
+    top: 0;
+}
+
+#cards section{
+    padding: 0.833rem;
+}
+
+#cards h3{
+    font-size: clamp(0.833rem, 1.6wv + 0.578rem, 1.728rem);
+    opacity: 0,5;
+    transition: opacity 0.5s;
+}
+
+#cards p{
+    opacity: 0;
+    transition: 1.0s;
+}
+
+#cards .over{
+    position: relative;
+    top: 1.44rem;
+    opacity: 0;
+    transition: 0.25s;
+}
+
+#cards a:hover {
+    transition: color 1s;
+}
+
+#cards a:hover h3, #cards a:hover p{
+    opacity: 1;
+}
+
+#cards section{
+    transform: translateY(1.728rem);
+    transition: transform 0.25s;
+}
+
+#cards a:hover section{
+    transform: translateY(0);
+}
+
+#cards a:hover .over{
+    top: 0;
+    opacity: 1;
+}
+

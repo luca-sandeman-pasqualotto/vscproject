@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    font-size: 25px;
+    height: 100%;
+}
+h1 {
+    margin-top: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgba(43, 105, 193, 0.836);
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+
+figcaption {
+    color: aliceblue;
+    width: 100%;
+    text-align: center;
+}
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+}

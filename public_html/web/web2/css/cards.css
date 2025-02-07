@@ -1,0 +1,90 @@
+#websites a {
+    border: solid 5px white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+
+#websites figure {
+    position: relative;
+}
+
+#websites img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+    top: 0;
+}
+
+#zomboid {
+    display: grid;
+    grid-template-columns: 2fr;
+    gap: 1.44rem;
+    padding: 7rem 0rem;
+}
+
+#zomboid figure {
+    position: relative;
+}
+
+#zomboid a {
+    border: solid 1px white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+#zomboid img {
+    width: 100%;
+    aspect-ratio: 16/8;
+    object-fit: cover;
+    object-position: center center;
+    position: absolute;
+    top: 0;
+}
+
+#zomboid section {
+    padding: 0.833rem;
+}
+
+#zomboid h3 {
+    font-size: clamp(0.833rem, 1.6wv + 0.578rem, 1.728rem);
+    opacity: 0, 5;
+    transition: opacity 0.5s;
+}
+
+#zomboid p {
+    opacity: 0;
+    transition: 1.0s;
+}
+
+#zomboid .over {
+    position: relative;
+    top: 1.44rem;
+    opacity: 0;
+    transition: 0.25s;
+}
+
+#zomboid a:hover {
+    transition: color 1s;
+}
+
+#zomboid a:hover h3,
+#zomboid a:hover p {
+    opacity: 1;
+}
+
+#zomboid section {
+    transform: translateY(1.728rem);
+    transition: transform 0.25s;
+}
+
+#zomboid a:hover section {
+    transform: translateY(0);
+}
+
+#zomboid a:hover .over {
+    transform: translateY(0);
+    opacity: 1;
+}
